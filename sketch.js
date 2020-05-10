@@ -199,6 +199,7 @@ function GenerateStory() {
     var result = grammar.flatten("#start#")
     document.getElementById('story').style.display = "block"
     document.getElementById('speakBtn').style.display = "block"
+    document.getElementById('mist').style.display = "block"
     document.getElementById('desc').innerHTML = result
 
     // console.log(result)
