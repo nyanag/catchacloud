@@ -191,7 +191,7 @@ function GenerateStory() {
         "miss" : ["sun-bathing", "wet parties", "diving", "skiing"],
         "animal" : ["raccoon", "crow", "ufo","helicopter", "dodo"],
         "pun" : ["two’s company, three’s a cloud", "What sort of clothes do clouds have? Thunderwear.","Why do metrologists pay so much attention to wispy clouds? They take them cirrus-ly.", "I’d tell you a joke about a cloud but it would be over your head.", "What is a cloud’s favourite reptile? A blizzard.","What’s worse than rain clouds? When it’s hailing taxis."],
-        "adj" : ['tremendous', 'gooey', 'sharp', 'dark', 'scary'],
+        "adj" : ['tremendous', 'gooey', 'sharp', 'dark', 'scary','flabbergasted'],
         "wish":["Scurry along", "Stay safe","Go catch another", "Live life"],
         "ans": ans
     }
