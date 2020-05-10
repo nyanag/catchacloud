@@ -182,7 +182,7 @@ function Model() {
 function GenerateStory() {
     var story = {
         "start": ["Quite the cloudy day, but what do the clouds say?         #story#"],
-        "story" : ["#greet#, I am a #adj# #cloud#. Some say I look like a #ans#, and that's just #feels#. Sometimes it gets rather #noise# up here. I miss #miss#. The other day, I heard the #animal# say - #pun# Alright, #wish# kid."],
+        "story" : ["#greet#, I am a #adj# #cloud#. Some say I look like a #ans#, and that's just #feels#. Sometimes it gets rather #noise# up here. I miss #miss#. The other day, I heard the #animal# say - #pun# Alright, #wish#, kid."],
         "cloud": ['cirrocumulus', 'cumulonimbus', 'nimbostratus','cirrus'],
         "greet" : ["Hi","Howdy", "Hey hey hey","Sup"],
         "remind": ["poop", "strawberry shortcake", "butter chicken", "camp"],
@@ -198,9 +198,40 @@ function GenerateStory() {
     var grammar = tracery.createGrammar(story)
     var result = grammar.flatten("#start#")
     document.getElementById('story').style.display = "block"
+    document.getElementById('speakBtn').style.display = "block"
     document.getElementById('desc').innerHTML = result
 
     console.log(result)
 }
+
+let speakBtn, txtFld;
+
+function init() {
+  speakBtn = qs("#speakBtn");
+  txtFld = qs("#desc");
+  speakBtn.addEventListener("click", talk, false);
+  if (!window.speechSynthesis) {
+    speakBtn.disabled = true;
+    qs("#warning").style.display = "block";
+  }
+}
+
+function talk() {
+  let u = new SpeechSynthesisUtterance();
+  u.text = txtFld.value;
+  speechSynthesis.speak(u);
+}
+
+// Reusable utility functions
+function qs(selectorText) {
+  // Saves lots of typing for those who eschew jQuery
+  return document.querySelector(selectorText);
+}
+
+document.addEventListener('DOMContentLoaded', function (e) {
+  try {init();} catch (error) {
+    console.log("Data didn't load", error);
+  }
+});
 
 

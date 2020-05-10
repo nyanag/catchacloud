@@ -14,9 +14,10 @@
     <script src="sketchp5.js"></script>
 
     <style>
-        body{
+        body {
             user-select: none;
         }
+
         textarea {
             border: none;
             overflow: auto;
@@ -35,6 +36,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        #speakBtn {
+            font-family: monospace;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(135, 206, 250);
+            padding: 8px;
         }
     </style>
 </head>
@@ -206,7 +214,7 @@ Art by Michal 'Goldmoon' Kwasniewski
         <p id="results" style="font-family: monospace; margin: auto;"></p>
         <h1 style="font-family: monospace; margin: auto;display: none; margin-top: 20px;" id="story"> Story -- </h1>
         <textarea id="desc" style="font-family: monospace; margin: auto;" cols="55" rows="10" readonly></textarea>
-        <!-- <button type="button" id="speakBtn">Speak</button> -->
+        <button type="button" id="speakBtn" style="display: none;">Speak</button>
 
         <!-- <div class="uiunit">
         <label for="speakerMenu">Voice: </label>
