@@ -184,15 +184,15 @@ function GenerateStory() {
         "start": ["Quite the cloudy day, but what do the clouds say?         #story#"],
         "story" : ["#greet#, I am a #adj# #cloud#. Some say I look like a #ans#, and that's just #feels#. Sometimes it gets rather #noise# up here. I miss #miss#. The other day, I heard the #animal# say - #pun# Alright, #wish# kid."],
         "cloud": ['cirrocumulus', 'cumulonimbus', 'nimbostratus','cirrus'],
-        "greet" : ["Hi","Howdy", "Hey hey hey","Sup"],
+        "greet" : ["Hi","Howdy", "Hey hey hey","Sup",'Yooohoooo'],
         "remind": ["poop", "strawberry shortcake", "butter chicken", "camp"],
-        "noise" :['lonely','quiet','crowded','noisy'],
-        "feels" : ["outrageous", "alarming", "wonderful", "disgusting", "lovely"],
+        "noise" :['lonely','quiet','crowded','noisy','KA-BOOM','SKADOOSH'],
+        "feels" : ["outrageous", "alarming", "wonderful", "disgusting", "lovely",'skrtskrt'],
         "miss" : ["sun-bathing", "wet parties", "diving", "skiing"],
-        "animal" : ["raccoon", "crow", "ufo","helicopter", "dodo"],
+        "animal" : ["raccoon", "crow", "ufo","helicopter", "dodo",'gremlin','dragon','phoenix','Centaur','Unicorn','Pegasus'],
         "pun" : ["two’s company, three’s a cloud", "What sort of clothes do clouds have? Thunderwear.","Why do metrologists pay so much attention to wispy clouds? They take them cirrus-ly.", "I’d tell you a joke about a cloud but it would be over your head.", "What is a cloud’s favourite reptile? A blizzard.","What’s worse than rain clouds? When it’s hailing taxis."],
-        "adj" : ['tremendous', 'gooey', 'sharp', 'dark', 'scary','flabbergasted'],
-        "wish":["Scurry along", "Stay safe","Go catch another", "Live life"],
+        "adj" : ['tremendous', 'gooey', 'sharp', 'dark', 'scary','flabbergasted','Scrumptious','Splendid', 'Smelly','lit'],
+        "wish":["Scurry along", "Stay safe","Go catch another", "Live life",'Toodles'],
         "ans": ans
     }
     var grammar = tracery.createGrammar(story)
