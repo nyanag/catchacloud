@@ -169,11 +169,11 @@ function Model() {
         .imageClassifier("MobileNet")
         .then(classifier => classifier.classify(document.getElementById('output')))
         .then(results => {
-            console.log(results)
+            // console.log(results)
             ans = []
             results.forEach(data => ans.push(data.label))
             document.getElementById('results').innerHTML = "This looks a bit like " + ans
-            console.log(ans)
+            // console.log(ans)
             GenerateStory();
 
         });
@@ -201,7 +201,7 @@ function GenerateStory() {
     document.getElementById('speakBtn').style.display = "block"
     document.getElementById('desc').innerHTML = result
 
-    console.log(result)
+    // console.log(result)
 }
 
 let speakBtn, txtFld;
