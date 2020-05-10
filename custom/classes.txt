@@ -1,0 +1,10 @@
+arm
+apple
+cat
+car
+dog
+horse
+face
+banana
+bus
+bat
